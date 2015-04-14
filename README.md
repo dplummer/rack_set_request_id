@@ -1,7 +1,10 @@
 # Rack::SetRequestId
 
-For use with Rails and the RequestId gem, this sets the request id so it can be
-sent on to internal http services.
+For use with rails to set the request id for various logging purposes.
+Supports:
+
+* RequestId
+* Honeybadger
 
 ## Installation
 
