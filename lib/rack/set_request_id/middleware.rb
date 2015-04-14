@@ -6,7 +6,9 @@ module Rack
       end
 
       def call(env)
-        ::RequestId.set(:request_id, env['action_dispatch.request_id'])
+        if defined?(::RequestId)
+          ::RequestId.set(:request_id, env['action_dispatch.request_id'])
+        end
 
         if defined?(Honeybadger)
           Honeybadger.context(request_id: env['action_dispatch.request_id'])
