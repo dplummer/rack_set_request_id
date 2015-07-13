@@ -20,6 +20,8 @@ And then execute:
 
 ## Usage
 
+Just by requiring the gem in a Rails project, it will add itself to your list of
+middlware. See the railtie.rb.
 
 ## Development
 
